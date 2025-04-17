@@ -8786,8 +8786,8 @@ section {
   }
 }
 .service-area .section-header .text {
-  max-width: 300px;
-  margin-inline-start: 580px;
+  max-width: 600px;
+  margin-inline-start: 340px;
 }
 @media only screen and (max-width: 1399px) {
   .service-area .section-header .text {
@@ -8890,7 +8890,7 @@ section {
   }
 }
 .service-box .text {
-  max-width: 340px;
+  
 }
 .service-box .feature-list {
   margin-top: 18px;
@@ -8914,8 +8914,8 @@ section {
 }
 .service-box .content {
   display: grid;
-  gap: 20px 60px;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 560px 1fr;
+  width:max-content;
 }
 @media only screen and (max-width: 1399px) {
   .service-box .content {
