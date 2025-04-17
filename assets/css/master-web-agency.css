@@ -40,7 +40,7 @@
 
 .heroTitle {
   font-family: var(--font_getaway) !important;
-  font-size: 8rem !important;
+  font-size: 6rem !important;
   font-weight: 500 !important;
   line-break: loose;
 }
@@ -7910,7 +7910,7 @@ section {
   }
 }
 .hero-area .section-content .content-bottom {
-  margin-inline-start: 315px;
+  margin-inline-start: 110px;
   position: relative;
   margin-top: 65px;
 }
