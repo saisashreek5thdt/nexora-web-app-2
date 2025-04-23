@@ -8890,7 +8890,9 @@ section {
   }
 }
 .service-box .text {
-  
+  font-size: 1rem;
+  max-width: max-content !important;
+  width: 100% !important;
 }
 .service-box .feature-list {
   margin-top: 18px;
