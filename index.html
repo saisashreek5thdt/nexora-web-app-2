@@ -108,7 +108,7 @@
               <li><a href="index.html">home</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#services">Services</a></li>
-              <li><a href="#">Partnerships</a></li>
+              <li><a href="partnerships.html">Partnerships</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -143,7 +143,7 @@
                 </li>
                 <li><a href="#services">Services</a></li>
                 <li>
-                  <a href="#">Partnerships</a>
+                  <a href="partnerships.html">Partnerships</a>
                 </li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
@@ -1634,14 +1634,15 @@
               <div class="copyright-area-inner">
                 <div class="copyright-text">
                   <p class="text">
-                    All Rights Resevered. © CopyRights 2025
+                    All Rights Resevered. © CopyRights
                     <a href="index.html" target="_blank">Nexora Gloria</a>
+                    <span id="year"></span>
                   </p>
                 </div>
                 <ul class="footer-nav-list">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Partnerships</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="partnerships.html">Partnerships</a></li>
                   <li><a href="#">Career</a></li>
                 </ul>
                 <!-- <ul class="social-links">
@@ -1730,6 +1731,9 @@
           }
         );
       }
+    </script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
