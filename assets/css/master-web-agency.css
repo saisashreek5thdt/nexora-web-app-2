@@ -42,6 +42,14 @@
   font-family: var(--font_kanit) !important;
 }
 
+@media only screen and (max-width: 767px) {
+  .text-para {
+  font-size: 1.5rem;
+  width:400px;
+  font-weight: 500 !important;
+  }
+}
+
 .heroTitle {
   font-family: var(--font_getaway) !important;
   /* font-size: 6rem !important; */
@@ -7781,7 +7789,18 @@ section {
 }
 @media only screen and (max-width: 991px) {
   .hero-area .section-title {
-    font-size: 80px;
+    /* white-space: break-spaces; Ensures spaces are preserved and breaks words */
+    font-size: 70px;
+    line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 711px) {
+  .hero-area .section-title {
+    /* white-space: break-spaces; Ensures spaces are preserved and breaks words */
+    font-size: 60px;
+    line-height: 1;
+    width:20px;
   }
 }
 .hero-area .section-title .marked {
@@ -7901,7 +7920,7 @@ section {
 }
 @media only screen and (max-width: 767px) {
   .hero-area .section-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 160px;
   }
 }
 .hero-area .section-content .text {
