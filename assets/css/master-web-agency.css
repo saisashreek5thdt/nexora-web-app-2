@@ -42,13 +42,6 @@
   font-family: var(--font_kanit) !important;
 }
 
-@media only screen and (max-width: 767px) {
-  .text-para {
-  font-size: 1.5rem;
-  width:400px;
-  font-weight: 500 !important;
-  }
-}
 
 .heroTitle {
   font-family: var(--font_getaway) !important;
@@ -8171,6 +8164,7 @@ section {
 @media only screen and (max-width: 767px) {
   .about-area .section-title {
     text-indent: 0;
+    padding-top: 5px;
   }
 }
 .about-area .section-content .subtitle-wrapper {
