@@ -8387,7 +8387,7 @@ section {
 }
 @media only screen and (max-width: 1399px) {
   .feature-area .section-header .text {
-    margin-inline-start: 520px;
+    margin-inline-start: 170px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -8809,7 +8809,7 @@ section {
 }
 @media only screen and (max-width: 1399px) {
   .service-area .section-header .text {
-    margin-inline-start: 520px;
+    margin-inline-start: 260px;
   }
 }
 @media only screen and (max-width: 1199px) {
