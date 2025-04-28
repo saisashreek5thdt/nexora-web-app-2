@@ -31,6 +31,29 @@
   filter: grayscale(0.5);
   /* opacity:0.9; */
 }
+@media only screen and (max-width: 1281px) {
+  .heroBG {
+    background-image: url("../imgs/hero/Ayodhya.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 1); /* Black with 60% opacity */
+    /* filter: brightness(0.7); */
+    filter: grayscale(0.5);
+    /* opacity:0.9; */
+  }
+}
+
+/* @media only screen and (max-width: 431px) {
+  .heroBG {
+    background-image: url("../imgs/newSlides/Ayodhya480.png");
+  }
+} */
+
+@media only screen and (max-width: 431px) {
+  .heroBG {
+    background-image: url("../imgs/newSlides/banner-1080.png");
+  }
+}
 
 .text-para {
   display: flex;
@@ -7380,32 +7403,32 @@ section {
   color: #414141;
 }
 .section-spacing {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 @media only screen and (max-width: 1399px) {
   .section-spacing {
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 80px;
   }
 }
 @media only screen and (max-width: 1199px) {
   .section-spacing {
-    padding-top: 60px;
+    padding-top: 10px;
     padding-bottom: 60px;
   }
 }
 .section-spacing-top {
-  padding-top: 140px;
+  padding-top: 60px;
 }
 @media only screen and (max-width: 1399px) {
   .section-spacing-top {
-    padding-top: 80px;
+    padding-top: 60px;
   }
 }
 @media only screen and (max-width: 1199px) {
   .section-spacing-top {
-    padding-top: 60px;
+    padding-top: 40px;
   }
 }
 .section-spacing-bottom {
@@ -8198,7 +8221,7 @@ section {
 }
 @media only screen and (max-width: 991px) {
   .about-area .section-content .content-bottom {
-    gap: 65px;
+    gap: 15px;
     margin-top: 40px;
   }
 }
@@ -8910,14 +8933,22 @@ section {
 .service-box .text {
   font-size: 1rem;
   max-width: max-content !important;
-  width: 100% !important;
+  width: 150% !important;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 1281px) {
   .service-box .text {
     font-size: 1rem;
     max-width: max-content !important;
-    width: 50% !important;
+    width: 250% !important;
+  }
+}
+
+@media only screen and (max-width: 431px) {
+  .service-box .text {
+    font-size: 1rem;
+    max-width: max-content !important;
+    width: 67% !important;
   }
 }
 
