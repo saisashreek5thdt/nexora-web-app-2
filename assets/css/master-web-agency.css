@@ -7596,14 +7596,14 @@ section {
   
 }
 .cta-area .section-header .wc-btn-underline {
-  font-size: 20px ;
+  font-size: 30px !important;
   padding-bottom: 8px;
-  color: var(--white);
+  color: white !important;
   font-weight: 400;
 }
 @media only screen and (max-width: 432px) {
   .cta-area .section-header .wc-btn-underline {
-    font-size: 15px !important;
+    font-size: 15px ;
   }
 }
 
