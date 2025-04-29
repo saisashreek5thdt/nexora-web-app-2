@@ -7592,18 +7592,24 @@ section {
   }
 }
 .cta-area .section-header .btn-wrapper {
-  margin-top: 18px;
+  margin-top: 23px;
+  
 }
 .cta-area .section-header .wc-btn-underline {
-  font-size: 50px;
+  font-size: 20px ;
   padding-bottom: 8px;
-  text-transform: none;
   color: var(--white);
   font-weight: 400;
 }
+@media only screen and (max-width: 432px) {
+  .cta-area .section-header .wc-btn-underline {
+    font-size: 15px !important;
+  }
+}
+
 @media only screen and (max-width: 1919px) {
   .cta-area .section-header .wc-btn-underline {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 1399px) {
@@ -7611,12 +7617,7 @@ section {
     font-size: 28px;
   }
 }
-@media only screen and (max-width: 1199px) {
-  .cta-area .section-header .wc-btn-underline {
-    font-size: 22px;
-    padding-bottom: 5px;
-  }
-}
+
 .cta-area .section-header .wc-btn-underline::before {
   height: 3px;
 }
