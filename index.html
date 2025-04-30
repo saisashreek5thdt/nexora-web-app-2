@@ -78,13 +78,22 @@
             <div class="offcanvas-3__meta mb-145 d-none d-md-block">
               <ul>
                 <li>
-                  <a href="tel:+919962900211" class="unnerline"
-                    style="color: #ffff;"><u>+919962900211</u></a
+                  <a
+                    href="tel:+919962900211"
+                    class="unnerline"
+                    style="color: #ffff"
+                    ><u>+919962900211</u></a
                   >
                 </li>
-                <li><a href="mailto:venkatkatta@nexoragloria.com" style="color: #ffff;">venkatkatta@nexoragloria.com</a></li>
                 <li>
-                  <a href="#" style="color: #ffff;"
+                  <a
+                    href="mailto:venkatkatta@nexoragloria.com"
+                    style="color: #ffff"
+                    >venkatkatta@nexoragloria.com</a
+                  >
+                </li>
+                <li>
+                  <a href="#" style="color: #ffff"
                     >Hyderabad, <br />
                     Telangana</a
                   >
@@ -106,8 +115,16 @@
           <nav class="nav-menu offcanvas-3__menu">
             <ul>
               <li><a href="index.html">home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#services">Services</a></li>
+              <li>
+                <a onclick="scrollToSection('about')" style="cursor: pointer"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a onclick="scrollToSection('services')" style="cursor: pointer"
+                  >Services</a
+                >
+              </li>
               <li><a href="partnerships.html">Partnerships</a></li>
             </ul>
           </nav>
@@ -138,9 +155,19 @@
             <nav class="main-menu">
               <ul>
                 <li>
-                  <a href="#about">About Us</a>
+                  <a
+                    onclick="scrollToSection('aboutus')"
+                    style="cursor: pointer"
+                    >About Us</a
+                  >
                 </li>
-                <li><a href="#services">Services</a></li>
+                <li>
+                  <a
+                    onclick="scrollToSection('services')"
+                    style="cursor: pointer"
+                    >Services</a
+                  >
+                </li>
                 <li>
                   <a href="partnerships.html">Partnerships</a>
                 </li>
@@ -149,7 +176,10 @@
             </nav>
           </div>
           <div class="header__button">
-            <a class="wc-btn wc-btn-primary btn-text-flip" href="#contact"
+            <a
+              class="wc-btn wc-btn-primary btn-text-flip"
+              style="cursor: pointer"
+              onclick="scrollToSection('contact')"
               ><span data-text="Contact">Contact</span></a
             >
           </div>
@@ -179,8 +209,11 @@
                     <div class="content-first">
                       <div class="section-title-wrapper">
                         <div class="title-wrapper">
-                          <h1 class="section-title heroTitle has_fade_anim" >
-                            We <br/>  are <br /> Nexora <br /> Gloria
+                          <h1 class="section-title heroTitle has_fade_anim">
+                            We <br />
+                            are <br />
+                            Nexora <br />
+                            Gloria
                             <!-- <p>We</p>
                             <p>are</p>
                             <span>Nexora</span>
@@ -279,7 +312,7 @@
             <!-- clients area end  -->
 
             <!-- about area start  -->
-            <section id="about" class="about-area">
+            <section id="aboutus" class="about-area">
               <div class="container">
                 <div class="about-area-inner section-spacing">
                   <div class="section-content">
@@ -753,14 +786,12 @@
             </section>
             <!-- skill area end  -->
 
-
             <!-- work area start  -->
             <div class="py-5 work-area has_fade_anim">
               <div class="container-hd">
                 <div class="work-area-inner">
                   <div class="works-wrapper-box">
                     <div class="works-wrapper">
-
                       <div class="swiper work-slider-active" dir="rtl">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
@@ -836,7 +867,6 @@
 
                       <div class="swiper work-slider-active">
                         <div class="swiper-wrapper">
-
                           <div class="swiper-slide">
                             <a href="#">
                               <div class="work-box">
@@ -860,7 +890,7 @@
                             </a>
                           </div>
 
-                         <div class="swiper-slide">
+                          <div class="swiper-slide">
                             <a href="#">
                               <div class="work-box">
                                 <div class="thumb">
@@ -976,8 +1006,6 @@
                           </div>
                         </div>
                       </div>
-
-                      
                     </div>
                   </div>
                 </div>
@@ -1040,7 +1068,8 @@
                               <!-- <h3 class="title">IP</h3> -->
                               <div class="content-last">
                                 <p class="text">
-                                  ✅ Strong intellectual property portfolio with global market potential.
+                                  ✅ Strong intellectual property portfolio with
+                                  global market potential.
                                 </p>
                               </div>
                             </div>
@@ -1638,6 +1667,26 @@
     </script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script>
+      function scrollToSection(sectionId) {
+        setTimeout(() => {
+          const section = document.getElementById(sectionId);
+          if (!section) {
+            console.error(`Section with ID '${sectionId}' not found.`);
+            return;
+          }
+
+          gsap.to(window, {
+            duration: 1.2,
+            scrollTo: {
+              y: section,
+              offsetY: 80,
+            },
+            ease: "power3.out",
+          });
+        }, 100); // Delay execution slightly
+      }
     </script>
   </body>
 </html>
